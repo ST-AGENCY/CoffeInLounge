@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coffein Lounge — Menu</title>
+<meta name="description" content="Coffein Lounge — Ain w Zein, Chouf District. Sip, relax, recharge. Full menu of drinks, food and desserts.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%98%95%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="mainnav" id="top">
+  <div class="nav-row">
+    <a href="#top" class="brand">
+      <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 26h30v13a12 12 0 0 1-12 12H26a12 12 0 0 1-12-12V26Z"/><path d="M44 29h4.5a6 6 0 0 1 0 12H44"/><path d="M29 19c3-3 0-6 3-10" stroke-linecap="round"/></svg>
+      COFFEIN
+    </a>
+    <div class="nav-links">
+      <a href="#drinks" data-nav class="active">Drinks</a>
+      <a href="#food" data-nav>Food</a>
+      <a href="#desserts" data-nav>Desserts</a>
+    </div>
+    <div class="nav-search">
+      <button class="search-toggle" id="searchToggle" aria-label="Search menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35" stroke-linecap="round"/></svg>
+      </button>
+      <div class="search-wrap" id="searchWrap">
+        <input type="text" id="searchInput" placeholder="Search menu…" aria-label="Search menu">
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-emblem">
+    <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 26h30v13a12 12 0 0 1-12 12H26a12 12 0 0 1-12-12V26Z"/><path d="M44 29h4.5a6 6 0 0 1 0 12H44"/><path d="M24 18c2-3-1-5 0-8M32 16c2-3-1-5 0-8M40 18c2-3-1-5 0-8" stroke-linecap="round"/></svg>
+  </div>
+  <p class="hero-kicker">Sip · Relax · Recharge</p>
+  <h1>Coffein</h1>
+  <h2>Lounge</h2>
+  <div class="hero-rule"></div>
+  <p class="hero-tagline">We serve moments that stay.</p>
+  <p class="hero-loc">Ain w Zein · Chouf District, Lebanon</p>
+  <a href="#drinks" class="hero-cta">View Menu</a>
+</header>
+
+<noscript><div style="padding:40px;text-align:center;font-family:Georgia,serif;">Please enable JavaScript to view the full menu, or reach us directly at +961 76 678836.</div></noscript>
+
+<main id="menu-root"></main>
+
+<p class="no-results" id="noResults">No items match your search.</p>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 26h30v13a12 12 0 0 1-12 12H26a12 12 0 0 1-12-12V26Z"/><path d="M44 29h4.5a6 6 0 0 1 0 12H44"/></svg>
+      <span>COFFEIN</span>
+      <p>We serve moments that stay.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Visit</h4>
+      <p>Ain w Zein, Chouf District<br>Lebanon</p>
+      <p><a href="https://www.google.com/maps/search/?api=1&query=Coffein+Lounge+Ain+w+Zein+Chouf+Lebanon" target="_blank" rel="noopener">Get Directions →</a></p>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p><a href="tel:+96176678836">+961 76 678 836</a></p>
+      <p><a href="https://wa.me/96176678836" target="_blank" rel="noopener">Message on WhatsApp</a></p>
+      <p><a href="https://www.instagram.com/coffein_lounge/" target="_blank" rel="noopener">@coffein_lounge</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> Coffein Lounge. All rights reserved.</span>
+    <span>Menu crafted by St-Agency</span>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/96176678836" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.44 9.9-9.9 0-2.64-1.03-5.12-2.9-6.99A9.82 9.82 0 0 0 12.04 2Zm5.78 14.16c-.24.68-1.4 1.32-1.93 1.4-.5.08-1.12.11-1.8-.11-.42-.13-.96-.31-1.65-.6-2.9-1.25-4.8-4.17-4.94-4.36-.14-.19-1.18-1.57-1.18-3 0-1.42.75-2.12 1.02-2.41.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.83 2 .9 2.15.07.15.12.32.02.51-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.28.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.22 1.37.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.18-.27.36-.22.6-.13.24.09 1.53.72 1.79.85.26.13.43.19.5.3.06.11.06.63-.18 1.31Z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
